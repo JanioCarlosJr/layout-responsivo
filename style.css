@@ -61,7 +61,7 @@ header {
 
 .container-badges-inferiores {
     display: flex;
-    display: inline-block;
+    display: inline;
     text-align: center;
     gap: 10px;
 }
@@ -74,6 +74,8 @@ header {
     border-radius: 10px;
     font-size: 0.8rem;
     font-weight: 500;
+    white-space: nowrap;
+    
 }
 
 .btn-jogar-agora {

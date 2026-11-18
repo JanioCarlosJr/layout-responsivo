@@ -45,7 +45,7 @@ header {
     border-radius: 20px;
     font-size: 0.6rem;
     font-weight: 700;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.2px;    
 }
 
 .titulo-hero {
@@ -92,6 +92,7 @@ header {
     border: 0 solid;
     background: linear-gradient(135deg, #2563eb, #8b5cf6);
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .logo-cyberstrike {
@@ -181,6 +182,7 @@ header {
         border-radius: 10px;
         border: 0 solid;
         background: linear-gradient(135deg, #2563eb, #8b5cf6);
+        cursor: pointer;
     }
 
     .logo-cyberstrike {

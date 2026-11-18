@@ -18,12 +18,13 @@ header {
     padding: 20px;
     border: 1px solid #23304c;
     border-radius: 20px;
-    font-family: "Montserrat", sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
+    width: 100%;
 }
 
 .container-hero {
@@ -31,7 +32,8 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px
+    gap: 25px;
+    width: 100%;
 }
 
 .badge-temporada {
@@ -59,18 +61,16 @@ header {
 
 .container-badges-inferiores {
     display: flex;
-    flex-direction: row;
+    display: inline-block;
+    text-align: center;
     gap: 10px;
-
 }
 
 .badge-inferior {
     background-color: #151d30;
-    color: white;
+    color: #94a3b8;
     border: 1px solid #151d30;
     padding: 8px;
-    padding-left: 20px;
-    padding-right: 20px;
     border-radius: 10px;
     font-size: 0.8rem;
     font-weight: 500;
@@ -84,14 +84,29 @@ header {
     padding-left: 60px;
     padding-right: 60px;
     border-radius: 15px;
-    background-color: #38bdf8;
+    border: 0 solid;
+    background: linear-gradient(135deg, #2563eb, #8b5cf6);
+    ;
+}
+
+.logo-cyberstrike {
+    width: 50%;
 }
 
 
 @media (min-width: 768px) {
+
+    body {
+        background-color: #07090e;
+        width: 50%;
+        height: 100%;
+        margin: 0 auto;
+        padding-top: 5%;
+    }
+
     header {
         display: flex;
-        flex-direction: row;        
+        flex-direction: row;
         gap: 15px;
         padding: 35px;
     }
@@ -99,9 +114,10 @@ header {
     .container-hero {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;               
+        align-items: flex-start;
         gap: 25px;
-        width: 60%;
+        width: 50%;
+
     }
 
     .titulo-hero {
@@ -115,6 +131,43 @@ header {
         font-weight: 300;
         color: #94a3b8;
         text-align: left;
+    }
+
+    .logo-cyberstrike {
+        width: auto;
+    }
+
+    .badge-temporada {
+        background-color: #2c3e46;
+        color: #38bdf8;
+        border: 1px solid #38bdf8;
+        padding: 8px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+
+    .badge-inferior {
+        background-color: #151d30;
+        color: #94a3b8;
+        border: 1px solid #151d30;
+        padding: 8px;
+        border-radius: 10px;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+
+    .btn-jogar-agora {
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 15px;
+        border: 0 solid;
+        background: linear-gradient(135deg, #2563eb, #8b5cf6);
+        ;
     }
 
 
